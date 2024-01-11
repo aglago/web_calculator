@@ -8,8 +8,8 @@ body {
 }
 
 section.body {
-    height: 80vh;
-    width: 20vw;
+    height: 85vh;
+    min-width: 22vw;
     background-color: black;
     position: absolute;
     top: 50%;
@@ -30,6 +30,7 @@ section.digits {
     flex-direction: column;
     justify-content: space-around;
     margin-top: 10px;
+    padding-bottom: 10px;
 }
 
 div.c {
@@ -39,11 +40,11 @@ div.c {
 div.reg,
 div.symbols {
     background-color: #171719;
-    height: 8vh;
-    width:8vh;
+    height: 9vh;
+    width:9vh;
     border-radius: 50%;
     text-align: center;
-    line-height: 8vh;
+    line-height: 9vh;
     margin: 2px;
     cursor: pointer;
 }
@@ -81,6 +82,8 @@ div.buttons {
     color: white;
     border-bottom: 1px solid gray;
     padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 div.but {
@@ -93,3 +96,13 @@ div.work_area {
     height: 75%;
 }
 
+.material-symbols-outlined,
+.fa-regular {
+    color: gray;
+    font-size: 15px;
+}
+
+.fa-regular {
+    font-size: 10px;
+    font-weight: 500;
+}
