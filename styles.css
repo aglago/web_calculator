@@ -94,6 +94,20 @@ div.but {
 
 div.work_area {
     height: 75%;
+    color: white;
+
+    .calc,
+    .results {
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 15px;
+    }
+
+    .results {
+        padding-bottom: 2.5rem;
+    }
 }
 
 .material-symbols-outlined,
