@@ -31,38 +31,40 @@
 
       <section class="digits">
         <div class="row">
-          <div class="c symbols" onclick="detectKey()">C</div>
-          <div class="parenthesis symbols" onclick="detectKey()">()</div>
-          <div class="percent symbols" onclick="detectKey()">%</div>
-          <div class="divide symbols" onclick="detectKey()">÷</div>
+          <div class="c symbols" onclick="detectC()">C</div>
+          <div class="parenthesis symbols" onclick="detectBracketOpen()">
+            ()
+          </div>
+          <div class="percent symbols" onclick="detectPercent()">%</div>
+          <div class="divide symbols" onclick="detectDivide()">÷</div>
         </div>
 
         <div class="row">
-          <div class="seven reg" onclick="detectKey()">7</div>
-          <div class="eight reg" onclick="detectKey()">8</div>
-          <div class="nine reg" onclick="detectKey()">9</div>
-          <div class="mul symbols" onclick="detectKey()">x</div>
+          <div class="seven reg" onclick="detect7()">7</div>
+          <div class="eight reg" onclick="detect8()">8</div>
+          <div class="nine reg" onclick="detect9()">9</div>
+          <div class="mul symbols" onclick="detectMultiple()">x</div>
         </div>
 
         <div class="row">
-          <div class="four reg" onclick="detectKey()">4</div>
-          <div class="five reg" onclick="detectKey()">5</div>
-          <div class="six reg" onclick="detectKey()">6</div>
-          <div class="sub symbols" onclick="detectKey()">-</div>
+          <div class="four reg" onclick="detect4()">4</div>
+          <div class="five reg" onclick="detect5()">5</div>
+          <div class="six reg" onclick="detect6y()">6</div>
+          <div class="sub symbols" onclick="detectMinus()">-</div>
         </div>
 
         <div class="row">
-          <div class="one reg" onclick="detectKey()">1</div>
-          <div class="two reg" onclick="detectKey()">2</div>
-          <div class="three reg" onclick="detectKey()">3</div>
-          <div class="four symbols" onclick="detectKey()">+</div>
+          <div class="one reg" onclick="detect1()">1</div>
+          <div class="two reg" onclick="detect2()">2</div>
+          <div class="three reg" onclick="detect3()">3</div>
+          <div class="four symbols" onclick="detectPlus()">+</div>
         </div>
 
         <div class="row">
-          <div class="addorsub symbols" onclick="detectKey()">+/-</div>
-          <div class="zero reg" onclick="detectKey()">0</div>
-          <div class="dot symbols" onclick="detectKey()">.</div>
-          <div class="equal symbols" onclick="detectKey()">=</div>
+          <div class="addorsub symbols" onclick="detectAdvance()">+/-</div>
+          <div class="zero reg" onclick="detect0()">0</div>
+          <div class="dot symbols" onclick="detectDot()">.</div>
+          <div class="equal symbols" onclick="detectEqual()">=</div>
         </div>
       </section>
     </section>
