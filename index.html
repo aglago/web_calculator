@@ -18,7 +18,10 @@
     <section class="body">
       <!--First section: Calculation area and options-->
       <section class="word_butt">
-        <div class="work_area"></div>
+        <div class="work_area" id="work_area">
+          <div class="calc" id="calc"></div>
+          <div class="results" id="results"></div>
+        </div>
         <div class="buttons">
           <div class="but">
             <span class="material-symbols-outlined"> history </span>
@@ -31,7 +34,7 @@
 
       <section class="digits">
         <div class="row">
-          <div class="c symbols" onclick="detectC()">C</div>
+          <div class="c symbols" id="c" onclick="detectC()">C</div>
           <div class="parenthesis symbols" onclick="detectBracketOpen()">
             ()
           </div>
@@ -49,12 +52,12 @@
         <div class="row">
           <div class="four reg" onclick="detect4()">4</div>
           <div class="five reg" onclick="detect5()">5</div>
-          <div class="six reg" onclick="detect6y()">6</div>
+          <div class="six reg" onclick="detect6()">6</div>
           <div class="sub symbols" onclick="detectMinus()">-</div>
         </div>
 
         <div class="row">
-          <div class="one reg" onclick="detect1()">1</div>
+          <div class="one reg" id="one" onclick="detect1()">1</div>
           <div class="two reg" onclick="detect2()">2</div>
           <div class="three reg" onclick="detect3()">3</div>
           <div class="four symbols" onclick="detectPlus()">+</div>
@@ -64,9 +67,12 @@
           <div class="addorsub symbols" onclick="detectAdvance()">+/-</div>
           <div class="zero reg" onclick="detect0()">0</div>
           <div class="dot symbols" onclick="detectDot()">.</div>
-          <div class="equal symbols" onclick="detectEqual()">=</div>
+          <div class="equal symbols" onclick="detectEquals()">=</div>
         </div>
       </section>
     </section>
+
+    <!--The JavaScript File-->
+    <script src="scripts.js"></script>
   </body>
 </html>
