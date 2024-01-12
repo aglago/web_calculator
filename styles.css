@@ -120,3 +120,8 @@ div.work_area {
     font-size: 10px;
     font-weight: 500;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
