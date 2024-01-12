@@ -1,14 +1,3 @@
-// let numbers = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'zero'];
-//     let numbersEl = [elone, 'eltwo', 'elthree', 'elfour', 'elfive', 'elsix', 'elseven', 'eleight', 'elnine', 'elzero'];
-
-
-// for (let i = 0; i < numbers.length; i++){
-//     numbersEl[i] = document.getElementById(numbers[i]);
-//     numbersEl[i].addEventListener('click', () => {
-//         console.log(numbersEl[i]);
-//     });
-// }
-
 const calc = document.getElementById('calc');
 const results = document.getElementById('results');
 let number = '';
@@ -97,13 +86,25 @@ function detectEquals(){
 }
 
 function detectPercent(){
-    const one = document.getElementById('one');
     number += '%';
+    number = parseInt(number);
+    number = number / 100;
+    number = number.toString()
     calc.innerHTML = number;
 }
 
 function detectDot(){
-    const one = document.getElementById('one');
     number += '.';
+    calc.innerHTML = number;
+}
+
+function detectBracket(){
+    let bracket = number.search(/(\()/);
+    if (bracket >= 0)
+        bracket = ')';
+    else
+        bracket = '(';
+
+    number += bracket;
     calc.innerHTML = number;
 }
