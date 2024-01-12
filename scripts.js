@@ -71,12 +71,12 @@ function detectMinus(){
 }
 
 function detectDivide(){
-    number += '÷';
+    number += '/';
     calc.innerHTML = number;
 }
 
 function detectMultiple(){
-    number += 'x';
+    number += '*';
     calc.innerHTML = number;
 }
 
