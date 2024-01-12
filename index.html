@@ -35,9 +35,7 @@
       <section class="digits">
         <div class="row">
           <div class="c symbols" id="c" onclick="detectC()">C</div>
-          <div class="parenthesis symbols" onclick="detectBracketOpen()">
-            ()
-          </div>
+          <div class="parenthesis symbols" onclick="detectBracket()">()</div>
           <div class="percent symbols" onclick="detectPercent()">%</div>
           <div class="divide symbols" onclick="detectDivide()">÷</div>
         </div>
@@ -64,7 +62,7 @@
         </div>
 
         <div class="row">
-          <div class="addorsub symbols" onclick="detectAdvance()">+/-</div>
+          <a href="advanced.html"><div class="addorsub symbols">+/-</div></a>
           <div class="zero reg" onclick="detect0()">0</div>
           <div class="dot symbols" onclick="detectDot()">.</div>
           <div class="equal symbols" onclick="detectEquals()">=</div>
