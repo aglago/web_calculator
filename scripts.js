@@ -108,3 +108,8 @@ function detectBracket(){
     number += bracket;
     calc.innerHTML = number;
 }
+
+function deleteLast(){
+    number = number.slice(0,-1);
+    calc.innerHTML = number;
+}
